@@ -4,17 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"json-server --watch fake-db/db.json --port 8000\"",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@solidjs/router": "^0.15.3",
     "@tailwindcss/vite": "^4.1.4",
+    "json-server": "^1.0.0-beta.3",
     "solid-js": "^1.9.5",
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "vite": "^6.3.1",
     "vite-plugin-solid": "^2.11.6"
   }

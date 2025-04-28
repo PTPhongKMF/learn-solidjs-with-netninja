@@ -1,9 +1,16 @@
-import { createSignal } from "solid-js";
+import { createResource, createSignal } from "solid-js";
 import Card from "../components/Card";
 import CardUsingChildren from "../components/CardUsingChildren";
 
+async function fetchBlogs() {
+  const res = await fetch("http://localhost:8000/blogs");
+
+  return res.json();
+}
+
 
 const Home = () => {
+  const [blogs] = createResource(fetchBlogs);
 
   return (
     <>

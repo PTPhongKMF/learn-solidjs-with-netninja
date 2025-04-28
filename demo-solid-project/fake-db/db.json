@@ -1,0 +1,79 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "The Future of AI",
+      "description": "Exploring how AI will shape the future of technology and society."
+    },
+    {
+      "id": 2,
+      "title": "Health and Wellness Trends",
+      "description": "A deep dive into the latest health and wellness trends around the world."
+    },
+    {
+      "id": 3,
+      "title": "Tech Innovations in 2025",
+      "description": "The top tech innovations that will dominate the next decade."
+    },
+    {
+      "id": 4,
+      "title": "Sustainable Living Tips",
+      "description": "Practical tips for leading a more sustainable and eco-friendly life."
+    },
+    {
+      "id": 5,
+      "title": "Digital Marketing Strategies",
+      "description": "A guide to the most effective digital marketing techniques today."
+    },
+    {
+      "id": 6,
+      "title": "The Evolution of Social Media",
+      "description": "How social media platforms have evolved and what to expect next."
+    },
+    {
+      "id": 7,
+      "title": "Traveling Post-COVID",
+      "description": "How the travel industry is adapting and recovering after the COVID-19 pandemic."
+    },
+    {
+      "id": 8,
+      "title": "The Rise of Remote Work",
+      "description": "Examining how remote work is changing the global workforce."
+    },
+    {
+      "id": 9,
+      "title": "The Power of Minimalism",
+      "description": "Why minimalism is becoming a lifestyle choice for many in 2025."
+    },
+    {
+      "id": 10,
+      "title": "Future of Renewable Energy",
+      "description": "The advancements in renewable energy and their potential to transform the planet."
+    },
+    {
+      "id": 11,
+      "title": "Personal Finance in the Digital Age",
+      "description": "Understanding how digital tools are changing the landscape of personal finance."
+    },
+    {
+      "id": 12,
+      "title": "Artificial Intelligence in Healthcare",
+      "description": "How AI is revolutionizing healthcare and improving patient outcomes."
+    },
+    {
+      "id": 13,
+      "title": "Self-Care for Busy People",
+      "description": "Simple and effective self-care practices for people with packed schedules."
+    },
+    {
+      "id": 14,
+      "title": "Entrepreneurship in 2025",
+      "description": "What it takes to build a successful startup in the ever-changing landscape of 2025."
+    },
+    {
+      "id": 15,
+      "title": "The Impact of Virtual Reality",
+      "description": "Exploring how virtual reality is transforming entertainment, education, and beyond."
+    }
+  ]
+}
