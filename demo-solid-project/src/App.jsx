@@ -1,34 +1,43 @@
 import { createSignal } from 'solid-js'
-import solidLogo from './assets/solid.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import TopNavBar from './components/TopNavBar';
 
-function App() {
-  const [count, setCount] = createSignal(0)
+function App(props) {
+  const imgBannerUrl = "https://get.pxhere.com/photo/landscape-tree-water-nature-forest-grass-wilderness-mountain-cloud-sky-meadow-morning-lake-river-valley-mountain-range-reflection-tranquil-autumn-trees-rocks-hills-clouds-meditation-mountains-canada-loch-atmospheric-phenomenon-mountainous-landforms-computer-wallpaper-971434.jpg";
+
+  const [header, setHeader] = createSignal("Demo SolidJS Project");
+
+  function shuffleTitle() {
+    const shuffledTitle = header().split('').sort(() => Math.random() - 0.5).join('');
+    setHeader(shuffledTitle);
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://solidjs.com" target="_blank">
-          <img src={solidLogo} class="logo solid" alt="Solid logo" />
-        </a>
-      </div>
-      <h1>Vite + Solid</h1>
-      <div class="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count()}
+    <div class='container m-auto'>
+
+      <header>
+        <h1 class="text-6xl font-bold mb-5 text-center">{header()}</h1>
+      </header>
+
+      <div class="flex justify-center gap-4">
+        <button
+          onClick={shuffleTitle}
+          class="btn">
+          Shuffle
+
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <button
+          onClick={() => setHeader("Demo SolidJS Project")}
+          class="btn">
+          Reset
+        </button>
       </div>
-      <p class="read-the-docs">
-        Click on the Vite and Solid logos to learn more
-      </p>
-    </>
+
+      <TopNavBar />
+
+      <img class="img-banner rounded-md my-4" src={imgBannerUrl} alt="" />
+
+      {props.children}
+    </div>
   )
 }
 
